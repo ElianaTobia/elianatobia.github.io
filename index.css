@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #001253;
+    color:white;
+}
+
+h1{
+    font-size:xx-large;
+    color: white;
+}
+
+h2{
+    font-weight: 700;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+h3{
+    text-align: center;
+}
+
+nav{
+    padding: 10px;
+    display: flex;
+    justify-content:right;    
+}
+
+.anclas{
+   text-decoration-line: none;
+   padding: 10px;
+   color: white; 
+}
+.anclas:hover{
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+i{
+    color: white;
+    padding: 5px;    
+    font-size: 150%;
+    text-align: center;
+}
+
+.subir{
+    display: flex;
+    justify-content: center;
+    text-decoration-line: none;
+    padding: 20px;
+}
+
+/** Home */
+.video{
+    position: relative;
+}
+
+.texto_sobre_video{
+    color: white;
+    position: absolute;
+    top: 5%;
+    right: 5%;        
+}
+
+#atribucion{
+    color: grey;
+    font-size:x-small;
+    margin-top: 0; 
+}
+
+/** Sobre mi */
+.sobre_mi{
+    display: flex;
+    flex-wrap: wrap;
+}
+.moodboard{
+    background: url("Media/Foto_de_perfil.JPG") no-repeat center, url("Media/Plantila_moodboard_1080.png") no-repeat center;
+    background-size: cover;
+    box-sizing:border-box; 
+    width: auto;
+    float: left;
+}
+
+.contenedor{
+    
+    margin: 0 auto;
+    padding: 10px;
+    width: 35%;
+    height: auto;
+    box-sizing:border-box;  
+}
+
+.texto_sobre_mi{
+    padding: 20px;
+    text-align: justify;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    box-sizing:border-box; 
+}
+
+/** Mis habilidades */
+.mis_habilidades{
+    color: white;
+    text-align:center;
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+ul{
+    text-align: left;    
+}
+
+.columna{
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 10px;
+    width: 22%;
+    box-sizing:border-box;  
+}
+
+.columna:hover{
+    box-shadow: 5px 1px 10px grey;
+}
+
+button{
+    background-color:#001253;
+    outline: none;
+    border: 0;
+    color:white;
+}
+button:hover{
+    scale: 2;
+}
+
+/** Contacto */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mi_contacto{
+    box-sizing:border-box; 
+    width: auto;
+    float: left;
+    padding: 10px;
+}
+
+form{
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing:border-box;
+    width: 60%;
+    float: left;  
+}
