@@ -1,0 +1,318 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #001253;
+    color:white;
+}
+
+h1{
+    font-size:xx-large;  
+    display:inline;  
+}
+
+h2{
+    font-size:x-large;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    display: flex;
+    justify-content:right;
+    padding: 10px;        
+}
+
+.anclas{
+   text-decoration-line: none;
+   padding: 10px;
+   color: white; 
+}
+.anclas:hover{
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.fa-solid, .fa-sharp{
+    padding: 5px;
+    color: white;      
+    font-size: 150%;
+    text-align: center;
+}
+
+.subir{
+    display: flex;
+    justify-content: center;
+    text-decoration-line: none;
+    padding: 20px;
+}
+.subir:hover{
+    scale: 1.5;
+    text-shadow: 2px 1px 10px grey;
+}
+
+
+/** Home */
+.video{
+    position: relative;
+}
+
+.texto_sobre_video{
+    position: absolute;
+    text-overflow: clip;
+    text-align: right;
+    top: 5%;
+    right: 5%;        
+}
+
+#atribucion, footer{
+    color: grey;
+    font-size:x-small;
+    margin-top: -20px;
+    text-align: center; 
+}
+
+/** Sobre mi */
+.sobre_mi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 75vh;
+}
+
+.moodboardValores{
+    flex: 1;
+    height: 100%;
+    background-image: url(Media/Plantila_moodboard_1080.png);
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+    position: relative;    
+}
+
+.foto_de_perfil{
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid white;
+}
+
+.foto_de_perfil img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    background-color: white;
+}
+
+.texto_sobre_mi{
+    flex: 1;
+    padding: 0 20px;
+    text-align: justify;
+}
+
+
+/** Mis experiencias*/
+
+.mis_experiencias{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items:flex-start;  
+} 
+
+.caja_experiencias{
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin:10px;
+    position: relative;
+    width: 48%;
+}
+.caja_experiencias:hover{
+    box-shadow: 5px 1px 10px grey;
+}
+
+.titulo{
+    font-size: large;
+    font-weight: bold;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #001253;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.listas_experiencias{
+    margin: 10px;
+    padding: 10px;    
+}
+
+/** Mis habilidades */
+
+.mis_habilidades{
+    display: flex;
+    justify-content: space-around; 
+    align-items:flex-start; 
+    flex-wrap: wrap;
+    margin: 0 auto;   
+}
+
+.tipo_habilidad{    
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin:10px;
+    position: relative;
+    flex-basis: 23%;    
+}
+.tipo_habilidad:hover{
+    box-shadow: 5px 1px 10px grey;
+  }
+
+.botonMostrarOcultar{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+.botonMostrarOcultar:hover{
+    scale: 1.5;
+    text-shadow: 2px 1px 10px grey;
+}
+
+.listas_habilidades{
+    display: none;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: 10px;
+}
+
+.listas_habilidades li{
+    list-style: none;
+    margin: 10px;      
+}
+
+.listas_habilidades meter{
+    width: 100%;
+}
+
+.tipo_habilidad.active .listas_habilidades{
+    display: block;
+    padding-top: 0;  
+    margin: 0;  
+}
+
+.tipo_habilidad.active .botonMostrarOcultar .boton{
+    transform: rotate(180deg);  
+}
+
+
+/** Información personal y Formulario de contacto */
+.contacto{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;    
+}
+
+.mi_infoPersonal{
+    margin-top: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;       
+    flex-basis: 40%;
+    position: relative;     
+}
+.mi_infoPersonal:hover{
+    box-shadow: 5px 1px 10px grey;
+}    
+
+.lista_info{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10px;
+    flex-basis: 60%;    
+}
+
+.formulario{
+    margin: 0 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+}
+fieldset:hover{
+    box-shadow: 5px 1px 10px grey;
+}
+legend{
+    padding: 0 10px;
+    font-size: large;
+    background-color: #001253;
+}
+
+.columnaIzq{
+    box-sizing:border-box;
+    width: 40%;
+    float: left;
+    text-align: left;
+    margin: 0 10px;
+}
+
+.columnaDer{
+    box-sizing:border-box;
+    width: auto;
+    float: left;
+    text-align: center;
+}
+
+.pieForm{
+    display: block;
+    width: 100%;
+    float:left;
+}
+
+.requerido{
+    color: #FD841F;
+}
+*::placeholder{
+    color: #001253;
+}
+
+*:required{
+    background-color:#FD841F;
+}
+
+#mensaje{
+    border-radius: 5px;
+    color: #001253;
+}
+
+#enviar{
+    padding: 10px;    
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #001253;
+    color: white;   
+}
+#enviar:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
