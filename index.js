@@ -8,18 +8,4 @@ BotonesMostrarOcultar.forEach(function(button) {
         
     tipo_habilidad.classList.toggle('active');
   });
-}); 
-
-/**
-let BotonesMostrarOcultar = document.querySelectorAll('.botonMostrarOcultar');
-
-BotonesMostrarOcultar.forEach(function(button) {
-  button.addEventListener('click', function() {
-    let tipo_habilidad = this.parentElement;
-    let tipoHabilidad = document.querySelectorAll('.tipo_habilidad');
-        
-    tipoHabilidad.forEach(function() {
-      tipo_habilidad.classList.toggle('active');
-    });
-  });
-});*/
+});
